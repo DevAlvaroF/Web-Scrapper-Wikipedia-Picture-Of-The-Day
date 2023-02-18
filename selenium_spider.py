@@ -30,7 +30,6 @@ def main():
     soup = BeautifulSoup(page_source, 'lxml')
 
     # Get scrap info
-    soup.find
     description = [i.text for i in soup.find_all('a',class_='extiw')]
 
     # download the image with proper name
